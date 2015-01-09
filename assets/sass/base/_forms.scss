@@ -1,0 +1,39 @@
+// Forms – excluding buttons, which have their own partial
+
+textarea,
+[type="url"],
+[type="file"],
+[type="text"],
+[type="date"],
+[type="time"],
+[type="week"],
+[type="email"],
+[type="month"],
+[type="color"],
+[type="number"],
+[type="search"],
+[type="password"],
+[type="datetime"],
+[type="datetime-local"], {  
+  background: #fff;
+  border: solid 1px $color-border;
+  box-sizing: border-box;
+  display: inline-block;
+  height: 30px;
+  margin: 0;  
+  -webkit-appearance: none;
+  &:focus {
+    background: #D4F8FF;
+    outline: 0;
+    transition: background .6s;
+  }
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.3;
+  }
+}
+
+textarea {
+  min-height: 90px;
+  resize: vertical;
+}
