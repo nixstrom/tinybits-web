@@ -9,5 +9,42 @@
 // ==========================================================================
 .header {
   background: $color-primary;
+  color: #fff;
   height: 100vh;
+
+  &__figure {
+    margin-bottom: 2rem;
+    text-align: center;
+
+    &:before {
+      background: $color-secondary;
+      content: "";
+      display: block;
+      height: 5rem;
+      position: absolute;
+        top: -1rem;
+      transform: skewY(-5deg);
+      width: 100%;
+    }
+  }
+
+  &__logo {
+    height: 2.8rem;
+    padding: .5rem 0;
+    position: relative;
+  }
+
+  &__text {
+    padding: 1rem;
+  }
+
+  h2, h2 {
+    color: $color-primary--light;
+    font-weight: normal;
+
+    b {
+      color: #fff;
+      font-weight: normal;
+    }
+  }
 }

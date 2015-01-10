@@ -3,8 +3,10 @@
 // ==========================================================================
 
 $color-primary  : #7ec9e4; // sky blue
-$color-secondary: #6e6e6f; // dark grey
-$color-tertiary : #231f20; // dark brown
+$color-secondary: #fff; // dark grey
+$color-tertiary : #6e6e6f; // dark grey
+
+$color-primary--light : lighten($color-primary, 18%);
 
 $color-text: #000;
 $color-text--faded: #b2b2b2;

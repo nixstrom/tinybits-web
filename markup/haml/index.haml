@@ -4,14 +4,18 @@
     %meta(charset="utf-8")
     %meta(name="viewport" content="width=device-width, initial-scale=1")
     %link(href="../../public/stylesheets/main.css" rel="stylesheet")
+    %link(href="http://fonts.googleapis.com/css?family=Signika+Negative:400" rel="stylesheet" type="text/css")
   %body
 
     %header.header
-      %figure.header__logo
+      %figure.header__figure
+        %img.header__logo(src="../../assets/images/logo-mark.png")
 
-      %h1 Hello, friend!
-      %h2 I am Nikki Strømsnes, a freelance frontend developer, working out of Aarhus, Denmark. I love to design and great UI.
-      %h3 I am now open for new projectss!
+      %article.header__text
+        %h1 Hello, friend!
+        %h2 I am <b>Nikki Strømsnes</b>, a <b>freelance frontend developer</b> working out of Aarhus, Denmark.
+        %h2 I love to design and create great UI.
+        %h3 I am now open for new projects!
 
 
     %script(defer async src="../../public/javascripts/main.js")
