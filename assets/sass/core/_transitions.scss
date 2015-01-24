@@ -2,3 +2,8 @@
 // One example could be the toggling of a mobile menu, or a modal dropping down from the top.
 // The transitions should be created as placeholders, which you may then extend in the apporpriate partial.
 // Normal hover-states for links etc. should NOT be put in this file.
+
+@keyframes rotate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(120deg); }
+}

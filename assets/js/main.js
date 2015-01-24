@@ -1,6 +1,6 @@
 var App = App || {};
 
-App.Namespace = (function() {
+App.Main = (function() {
   "use strict";
 
   var X = '',
@@ -37,7 +37,6 @@ App.Namespace = (function() {
    * Attach event listeners to DOM elements
    */
   function _addEventListeners() {
-    dom.$body.addEventListener( 'click', _onBodyClicked );
   }
 
   /**
@@ -63,5 +62,16 @@ document.onreadystatechange = function () {
   // Initialize app when document is "ready"
   if (document.readyState == "complete") {
     App.Main.initialize();
+
+    /**
+     * Temp function to run on load
+     * It will trigger load animations and self-execute
+     */
+    (function _runOnLoad() {
+      document.querySelector('body').classList.add('is-loaded');
+
+      window.setTimeout(
+        document.querySelector('.header__loader').style.display = "none", 400);
+    })();
   }
 }

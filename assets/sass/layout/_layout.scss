@@ -7,38 +7,125 @@
 // ==========================================================================
 // HEADER
 // ==========================================================================
-.header {
-  background: $color-primary;
-  color: #fff;
+body {
   height: 100vh;
+  max-height: 100%;
+}
 
-  &__figure {
-    margin-bottom: 2rem;
-    text-align: center;
+.header {
+  overflow: hidden;
+  margin-bottom: 4rem;
+  text-align: center;
+
+  &:before,
+  &:after {
+    background: $color-secondary;
+    content: "";
+    display: block;
+    height: 51vh;
+    position: absolute;
+      top: -1vh;
+    width: 100%;
+
+    transition: all .275s cubic-bezier(0,.2,0.4,1);
+    transition-delay: .8s;
+  }
+
+  &:after {
+    color: $color-text;
+    content: "Hello, friend!";
+    font-size: 3rem;
+    top: 50%;
+  }
+
+  .is-loaded & {
+    .header__figure { margin-top: 0; }
+
+    &:before,
+    &:after { transform: skewY(-5deg); }
 
     &:before {
-      background: $color-secondary;
-      content: "";
-      display: block;
       height: 5rem;
-      position: absolute;
-        top: -1rem;
-      transform: skewY(-5deg);
-      width: 100%;
+      top: -1rem;
+    }
+
+    &:after {
+      color: #fff;
+      opacity: 0;
+      top: 110%;
     }
   }
 
-  &__logo {
-    height: 2.8rem;
-    padding: .5rem 0;
+  &__figure {
+    margin-top: 25vh;
     position: relative;
+
+    transition: all .275s cubic-bezier(0,.2,0.4,1);
+    transition-delay: .8s;
   }
+
+  &__logo,
+  &__logo--alt {
+    height: 6.8rem;
+    padding: .5rem 0;
+    transition: all .275s cubic-bezier(0,.2,0.4,1);
+    transition-delay: .8s;
+
+    .is-loaded & {
+      height: 2.8rem;
+      margin: 0;
+      padding: .5rem 0;
+    }
+  }
+
+  &__logo--alt {
+    height: 4.4rem;
+    margin-left: -2.2rem;
+    padding: 0;
+    position: absolute;
+      left: 50%; top: 22%; z-index: 4;
+
+    animation: {
+      name: rotate;
+      duration: .8s;
+    }
+
+    .is-loaded & {
+      height: 1.8rem;
+      margin-left: -.9rem;
+      top: .5rem;
+    }
+  }
+
+  &__loader {
+    background: $color-primary;
+    height: 1px;
+    width: 0;
+    position: absolute;
+      top: 50%; left: 0; z-index: 4;
+
+    transition: all .4s ease-in;
+    transition-delay: .4s;
+
+    .is-loaded & { width: 100%; }
+  }
+}
+
+
+//
+// INTRO SECTION
+//
+
+.intro-sec {
+  background: $color-primary;
+  color: #fff;
+  height: 100vh;
 
   &__text {
     padding: 1rem;
   }
 
-  h2, h2 {
+  h2 {
     color: $color-primary--light;
     font-weight: normal;
 
