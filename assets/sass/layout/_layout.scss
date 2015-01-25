@@ -14,7 +14,6 @@ body {
 
 .header {
   overflow: hidden;
-  margin-bottom: 4rem;
   text-align: center;
 
   &:before,
@@ -118,8 +117,10 @@ body {
 
 .intro-sec {
   background: $color-primary;
+  box-sizing: border-box;
   color: #fff;
-  height: 100vh;
+  height: calc(100vh - 60px); // TODO: This is the calculated height of the header
+  padding-top: 8rem;
 
   &__text {
     padding: 1rem;
@@ -133,5 +134,32 @@ body {
       color: #fff;
       font-weight: normal;
     }
+  }
+}
+
+
+//
+// ABOUT SECTION
+//
+
+.about-sec {
+  background: #ededed;
+  padding: 3rem;
+}
+
+
+//
+// CLIENT SECTION
+//
+
+.client-sec {
+  background: #98a3a6;
+  color: #fff;
+  padding: 3rem 2rem;
+
+  &__logo {
+    box-sizing: border-box;
+    padding: 1rem;
+    width: 50%;
   }
 }
