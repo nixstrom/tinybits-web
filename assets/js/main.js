@@ -70,6 +70,10 @@ document.onreadystatechange = function () {
     (function _runOnLoad() {
       document.querySelector('body').classList.add('is-loaded');
 
+      var _introHeight = document.querySelector('.intro-sec').clientHeight;
+
+      document.querySelector('.intro-sec').style.height = _introHeight + "px";
+
       window.setTimeout(
         document.querySelector('.header__loader').style.display = "none", 400);
     })();
