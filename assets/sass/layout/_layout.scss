@@ -153,8 +153,8 @@ body {
 //
 
 .client-sec {
-  background: #98a3a6;
-  color: #fff;
+  background: #fff;
+  color: #3c4c5e;
   padding: 3rem 2rem;
 
   &__logo {
@@ -162,4 +162,35 @@ body {
     padding: 1rem;
     width: 50%;
   }
+}
+
+
+//
+// CONTACT SECTION
+//
+
+.contact-sec {
+  background: #3c4c5e;
+  color: #fff;
+  padding: 3rem;
+
+  a {
+    color: currentColor;
+    background: rgba(0,0,0,.1);
+    border: {
+      color: #3c4c5e;
+      style: solid;
+      width: 0 3px 3px 0;
+    }
+    box-sizing: border-box;
+    display: inline-block;
+    padding: 1rem 0;
+    text-align: center;
+    width: 33.33%;
+
+    &:last-child { border: 0; }
+  }
+
+  &__icon--mail { border-right: 0 !important; width: 100% !important; }
+
 }
