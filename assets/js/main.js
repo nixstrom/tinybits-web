@@ -23,6 +23,9 @@ App.Main = (function() {
 
     // Add event listeners
     _addEventListeners();
+
+    window.setTimeout(_removeLoader, 1000);
+
   }
 
   /**
@@ -37,6 +40,13 @@ App.Main = (function() {
    * Attach event listeners to DOM elements
    */
   function _addEventListeners() {
+  }
+
+  /**
+   * Removes the loader
+   */
+  function _removeLoader () {
+    document.querySelector('.header__loader').style.display = "none";
   }
 
   /**
@@ -74,8 +84,6 @@ document.onreadystatechange = function () {
 
       document.querySelector('.intro-sec').style.height = _introHeight + "px";
 
-      window.setTimeout(
-        document.querySelector('.header__loader').style.display = "none", 400);
     })();
   }
 }
