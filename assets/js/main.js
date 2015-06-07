@@ -26,6 +26,22 @@ App.Main = (function() {
 
     window.setTimeout(_removeLoader, 1000);
 
+    // Listen for orientation changes
+    window.addEventListener("orientationchange", function() {
+      var _docHeight = window.innerHeight;
+
+      document.querySelector('.intro-sec').style.height = "auto";
+
+      var _introHeight = document.querySelector('.intro-sec').offsetHeight;
+
+      alert(_introHeight + " " + _docHeight);
+
+      if(_introHeight < _docHeight) {
+        document.querySelector('.intro-sec').style.height = _docHeight;
+      } else {
+        document.querySelector('.intro-sec').style.height = _introHeight;
+      }
+    }, false);
   }
 
   /**
