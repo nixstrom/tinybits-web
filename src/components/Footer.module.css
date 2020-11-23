@@ -1,0 +1,38 @@
+.footer {
+	padding: var(--layoutPadding);
+	padding-top: calc(20vh + var(--skew-padding));
+	display: flex;
+	flex-flow: row wrap;
+	gap: 4rem;
+	position: relative;
+	z-index: 2;
+}
+
+.footer::before {
+	content: "";
+	background-color: var(--tertiaryColor);
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	transform: skewY(-5deg) translateY(calc(-1 * var(--skew-padding)));
+}
+
+.footer h2 {
+	color: var(--primaryColor);
+	font-weight: 400;
+	font-size: var(--textSizeMedium);
+	margin-bottom: 6rem;
+	line-height: 1.35;
+}
+
+.footer em {
+	color: var(--secondaryColor);
+	font-style: normal;
+}
+
+.cta {
+	border-color: var(--tertiaryColor);
+}

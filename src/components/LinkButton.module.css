@@ -1,0 +1,37 @@
+.primary {
+	background-color: var(--primaryColor);
+	color: var(--secondaryColor);
+}
+
+.secondary {
+	background-color: var(--secondaryColor);
+	color: var(--primaryColor);
+	font-size: var(--textSizeMedium);
+	padding: 1.5rem 3rem;
+	margin-top: 2rem;
+}
+
+.linkButton {
+	composes: primary;
+	border: solid 1px currentColor;
+	cursor: pointer;
+	display: inline-block;
+	padding: 1em;
+	font-size: var(--textSizeSmall);
+	text-decoration: none;
+	border-radius: var(--borderRadius);
+	transition: box-shadow var(--animationSpeed);
+}
+
+.linkButton:hover {
+	box-shadow: 0 0 0 4px var(--primaryColor-faded);
+}
+
+.linkButton svg {
+	vertical-align: middle;
+	margin-right: 0.75em;
+}
+
+.linkButtonText {
+	vertical-align: middle;
+}

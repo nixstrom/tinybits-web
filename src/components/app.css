@@ -1,0 +1,65 @@
+:root {
+	--layoutPadding: 20vh 20vw;
+
+	--primaryColor: hsl(197, 68.5%, 71.4%);
+	--primaryColor-faded: hsl(195, 100%, 90%);
+	--secondaryColor: hsl(0, 0%, 100%);
+	--tertiaryColor: hsl(197, 16%, 22%);
+
+	--fontFamily: Signika Negative, "Trebuchet MS", "Lucida Sans Unicode",
+		"Lucida Grande", "Lucida Sans", Arial, sans-serif;
+
+	--textSizeHuge: 6rem;
+	--textSizeLarge: 4rem;
+	--textSizeMedium: 2.6rem;
+	--textSizeSmall: 2rem;
+	--textSizeTiny: 1.25rem;
+
+	--borderRadius: 5px;
+
+	--animationSpeed: 0.2s;
+
+	--magic-number: 0.04374433176; /* tan(5°)/2 */
+	--skew-padding: calc(100vw * var(--magic-number));
+
+	--heroHeight: calc(100vh + 2 * var(--skew-padding));
+}
+
+@media (max-width: 1024px) {
+	:root {
+		--layoutPadding: 15vh 10vw;
+	}
+}
+
+html {
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+	background-color: var(--tertiaryColor);
+}
+
+body,
+html,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	font-family: var(--fontFamily);
+	line-height: 1.15;
+}
+
+p {
+	font-size: var(--textSizeMedium);
+}
+
+h1 {
+	font-size: var(--textSizeHuge);
+	color: var(--secondaryColor);
+	margin-bottom: 4rem;
+}
+
+small {
+	font-size: 70%;
+}

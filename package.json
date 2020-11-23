@@ -1,30 +1,39 @@
 {
-  "name": "sassentials",
-  "version": "0.2.0",
-  "description": "",
-  "main": "index.js",
+  "name": "tinybits-web",
+  "private": true,
+  "description": "Tinybits website made with Gatsby Starter",
+  "version": "1.0.0",
+  "author": "Nikki Strømsnes <hello@tinybits.dk>",
+  "dependencies": {
+    "@types/react-helmet": "^6.1.0",
+    "gatsby": "^2.27.0",
+    "gatsby-plugin-google-analytics": "^2.6.0",
+    "gatsby-plugin-manifest": "^2.7.0",
+    "gatsby-plugin-react-helmet": "^3.5.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-helmet": "^6.1.0",
+    "typeface-signika-negative": "^1.1.13"
+  },
+  "devDependencies": {
+    "prettier": "2.2.0"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "gatsby build",
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "start": "gatsby develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/TheNix/rks-web.git"
+    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
   },
-  "author": "",
-  "license": "ISC",
   "bugs": {
-    "url": "https://github.com/TheNix/rks-web/issues"
-  },
-  "homepage": "https://github.com/TheNix/sassentials",
-  "devDependencies": {
-    "gulp": "^3.8.7",
-    "gulp-autoprefixer": "^2.0.0",
-    "gulp-concat": "^2.3.4",
-    "gulp-haml": "^0.1.1",
-    "gulp-jshint": "^1.8.4",
-    "gulp-notify": "^1.5.0",
-    "gulp-ruby-sass": "^0.7.1",
-    "gulp-uglify": "^0.3.2",
-    "jshint-stylish": "^0.4.0"
+    "url": "https://github.com/gatsbyjs/gatsby/issues"
   }
 }

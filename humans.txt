@@ -8,9 +8,14 @@
 
 # Project
 * Date initiated: 28th of May, 2014
+* Major revision on: 23rd of November 2020
+* Source code: https://github.com/nixstrom/tinybits-web
 
-# Technology
-* Normalize
-* Sass w/ Compass
-* Susy
-* jQuery
+## 🚀 Tech stack
+This is a statically rendered React + Gatsby project. It uses CSS Modules for styling ... and is otherwise lean as a leopard.
+
+## 🛠Assets and recognitions
+
+- Gatsby Starter Default: https://github.com/gatsbyjs/gatsby-starter-default
+- Feather Icons: https://feathericons.com/
+- Signika Negative: https://fonts.google.com/specimen/Signika+Negative
