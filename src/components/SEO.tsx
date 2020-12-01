@@ -28,7 +28,7 @@ const SEO = ({ description, title, meta = [] }: Props) => {
 			htmlAttributes={{
 				lang: "en",
 			}}
-			title={title || site.siteMetadata.title}
+			title={title}
 			titleTemplate={`%s | ${site.siteMetadata.title}`}
 			meta={[
 				{
