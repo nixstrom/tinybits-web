@@ -6,7 +6,7 @@ import {
 	GithubIcon,
 	CodepenIcon,
 } from "../assets/svg"
-import styles from "./Footer.module.css"
+import * as styles from "./Footer.module.css"
 import LinkButton from "./LinkButton"
 import ButtonGroup from "./ButtonGroup"
 

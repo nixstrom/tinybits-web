@@ -1,5 +1,5 @@
 import React from "react"
-import styles from "./LinkButton.module.css"
+import * as styles from "./LinkButton.module.css"
 
 interface Props {
 	href: string

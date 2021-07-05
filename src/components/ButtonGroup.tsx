@@ -1,6 +1,6 @@
 import React from "react"
 import { OutboundLink } from "gatsby-plugin-google-analytics"
-import styles from "./ButtonGroup.module.css"
+import * as styles from "./ButtonGroup.module.css"
 
 interface ItemProps {
 	href: string

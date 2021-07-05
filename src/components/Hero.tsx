@@ -1,6 +1,6 @@
 import React from "react"
 import LinkButton from "./LinkButton"
-import styles from "./Hero.module.css"
+import * as styles from "./Hero.module.css"
 
 const Hero = () => (
 	<header className={styles.hero}>

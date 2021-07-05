@@ -1,4 +1,6 @@
-declare module "*.css" {
-	const content: { [className: string]: string }
-	export default content
+type CSSModule = Record<string, string>
+
+declare module "*.module.css" {
+	const cssModule: CSSModule
+	export = cssModule
 }
