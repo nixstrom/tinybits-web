@@ -13,9 +13,13 @@ import ButtonGroup from "./ButtonGroup"
 const Footer = () => (
 	<footer className={styles.footer} id="Footer">
 		<h2>
-			I am unavailable for new projects until <em>July 2021</em>, but don’t let
-			that stop you – I am always happy to connect.
+			I am <em>available</em> for new freelance projects!
 		</h2>
+
+		<p>
+			Reach out if I can help make your web application dream come true — or if
+			you just want to chat.
+		</p>
 
 		<LinkButton
 			href="mailto:hello@tinybits.dk"

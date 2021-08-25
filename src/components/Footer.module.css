@@ -25,13 +25,19 @@
 	font-weight: 400;
 	font-size: var(--textSizeMedium);
 	flex-basis: 100%;
-	margin-bottom: 6rem;
 	line-height: 1.35;
+	margin-bottom: 0;
 }
 
 .footer em {
 	color: var(--secondaryColor);
 	font-style: normal;
+}
+
+.footer p {
+	color: var(--primaryColor);
+	font-size: var(--textSizeSmall);
+	margin-bottom: 6rem;
 }
 
 .cta {
